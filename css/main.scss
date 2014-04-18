@@ -1,1 +1,100 @@
 @import "reset";
+
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700");
+
+// **************** Colors
+$color1: #11B480;
+
+// **************** Fonts
+
+// **************** Image Background
+
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background: #424244;
+  z-index: 99;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+}
+
+.main-navigation {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  margin: 0.8em 1em;
+  li {
+    display: inline-block;
+    a {
+      padding: 0.25em 0.5em;
+      margin: .2em;
+      background: $color1;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #fff;
+      border-radius: 20px;
+      border: solid white 2px;
+      &:hover {
+        background: darken($color1, 5%);
+      }      
+    }
+  }
+}
+
+.socialIcons {
+  li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+section {
+  min-height: 100%;
+  position: relative;
+  padding: 3em 1em 1em;
+  color: #fff;
+  text-align: center;
+  &.one {
+    padding-top: 11em;
+    background: #5eaa94;
+    background:
+      url('http://thepatternlibrary.com/img/ao.gif') 100% 0 repeat fixed;
+    background-size: 100%;
+  }
+  &.two {
+    background: $color1;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+  }
+  &.three {
+    background: #5a986d;
+    background:
+      url('http://thepatternlibrary.com/img/ao.gif') 100% 0 repeat fixed;
+    background-size: 100%;
+      p {
+      padding-right: 10%;
+      padding-left: 50%;
+      }
+  }
+  &.four {
+    background: $color1;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+  }
+}
